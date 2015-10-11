@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block body %}
+        <h1>Application Form</h1>
+        <p class="jobapp">This is a job application.</p><br>
+        <form action="/application" method="POST">
+            First Name: <input type="text" name="firstname"><br>
+            Last Name: <input type="text" name="lastname"><br>
+            What is your desired salary?: <input type="text" name="salary"><br>
+            What job are you applying for?: 
+            <input type="radio" name="job" value="Software Engineer">Software Engineer
+            <input type="radio" name="job" value="QA Engineer">QA Engineer
+            <input type="radio" name="job" value="Product Manager">Product Manager<br>
+            <input type="submit">
+        </form>
+{% endblock %}
